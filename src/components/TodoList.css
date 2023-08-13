@@ -1,0 +1,48 @@
+.container{
+    display:flex;
+    width:95%;
+    margin-top: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.todos{
+    display:flex;
+    /* justify-content: space-evenly; */
+    width:47.5%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgb(117, 192, 197);
+}
+
+.todos__heading{
+font-size: 19px;
+color: white;
+
+}
+
+.remove{
+    background-color: rgb(177, 77, 77);
+}
+
+.dragactive{
+    background-color: rgb(101, 165, 177);
+}
+.dragcomplete{
+    background-color: rgba(182, 52, 63, 0.979);
+
+}
+@media (max-width:700px) {
+    .todos{
+        width:95%;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        width:95%;
+        flex-direction: column;
+    }
+}
+
